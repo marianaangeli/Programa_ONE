@@ -13,11 +13,3 @@
 O **Oracle Next Education (ONE)** é um programa de educação e empregabilidade com objetivo social de capacitar pessoas em tecnologia e conectá-las com o mercado de trabalho por meio de empresas parceiras como Oracle, Alura e outras instituições.
 
 Este repositório documenta minha jornada através do programa, incluindo todos os projetos, exercícios e aprendizados adquiridos durante o curso.
-
-## 🎯 Objetivos do Programa
-
-- 📚 **Formação completa** em desenvolvimento de software
-- 💼 **Preparação para o mercado** de trabalho em tecnologia  
-- 🤝 **Networking** com profissionais da área
-- 🏆 **Certificação** reconhecida pelo mercado
-- 🚪 **Oportunidades** de emprego em empresas parceiras
