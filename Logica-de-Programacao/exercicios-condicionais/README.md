@@ -12,7 +12,7 @@ Exercícios práticos de estruturas condicionais desenvolvidos no programa Oracl
 
 ## 🚀 Como Usar
 
-1. Abra o arquivo `index.html` no navegador
+1. Abra o arquivo `condicionais.html` no navegador
 2. Os exercícios executarão automaticamente
 
 ## 🎓 Conceitos Abordados
@@ -26,5 +26,5 @@ Exercícios práticos de estruturas condicionais desenvolvidos no programa Oracl
 ## 📁 Arquivos
 
 - `condicionais.js` - Código dos exercícios
-- `index.html` - Interface para execução
+- `condicionais.html` - Interface para execução
 - `README.md` - Esta documentação
