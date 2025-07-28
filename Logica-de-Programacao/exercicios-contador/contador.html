@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Contadores com While</title>
+</head>
+<body>
+  <h1>Contadores com While</h1>
+
+  <!-- Área onde os resultados serão mostrados -->
+  <div id="saida"></div>
+
+  <script>
+    // Função para imprimir na tela
+    function mostrar(texto) {
+      document.getElementById("saida").innerHTML += texto + "<br>";
+    }
+
+    // 1. Crie um contador que comece em 1 e vá até 10 usando um loop while. Mostre cada número.
+    mostrar("Contador de 1 até 10:");
+    let i = 1;
+    while (i <= 10) {
+      mostrar(i);
+      i++;
+    }
+
+    // 2. Crie um contador que começa em 10 e vá até 0 usando um loop while. Mostre cada número.
+    mostrar("<br>Contador de 10 até 0:");
+    let j = 10;
+    while (j >= 0) {
+      mostrar(j);
+      j--;
+    }
+
+    // 3. Crie um programa de contagem regressiva. 
+    // Peça um número e conte deste número até 0, usando um loop while no console do navegador.
+    let num1 = parseInt(prompt("Digite um número para contagem regressiva:"));
+    mostrar(`<br>Contagem regressiva de ${num1} até 0:`);
+    while (num1 >= 0) {
+      mostrar(num1);
+      num1--;
+    }
+
+    // 4. Crie um programa de contagem progressiva. 
+    // Peça um número e conte de 0 até esse número, usando um loop while no console do navegador.
+    let num2 = parseInt(prompt("Digite um número para contagem progressiva:"));
+    mostrar(`<br>Contagem progressiva de 0 até ${num2}:`);
+    let k = 0;
+    while (k <= num2) {
+      mostrar(k);
+      k++;
+    }
+  </script>
+</body>
+</html>
