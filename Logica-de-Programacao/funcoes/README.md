@@ -13,7 +13,7 @@ O projeto implementa as seguintes funções:
 - `maiorNumero(x, y)` – Retorna o maior entre dois números.
 - `quadrado(numero)` – Retorna o quadrado de um número.
 
-## 🧪 Como testar
+## 💻 Como testar
 
 1. Clone ou baixe o repositório.
 2. Abra o arquivo `funcoes.html` no navegador.
