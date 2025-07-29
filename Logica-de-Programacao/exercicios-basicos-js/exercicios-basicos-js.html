@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        button {
+            background-color: #4169E1;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px 0;
+        }
+        
+        button:hover {
+            background-color: #1E90FF;
+        }
+        
+        div {
+            margin: 15px 0;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios JavaScript</h1>
+    
+    <p><strong>Instruções:</strong> Abra o Console do navegador (F12 → Console) para ver os resultados!</p>
+
+    <div>
+        <h3>1. Mensagem de Boas-vindas</h3>
+        <button onclick="exercicio1()">Executar</button>
+    </div>
+
+    <div>
+        <h3>2. Variável Nome + Console.log</h3>
+        <button onclick="exercicio2()">Executar</button>
+    </div>
+
+    <div>
+        <h3>3. Variável Nome + Alert</h3>
+        <button onclick="exercicio3()">Executar</button>
+    </div>
+
+    <div>
+        <h3>4. Prompt - Linguagem Favorita</h3>
+        <button onclick="exercicio4()">Executar</button>
+    </div>
+
+    <div>
+        <h3>5. Soma de Dois Valores</h3>
+        <button onclick="exercicio5()">Executar</button>
+    </div>
+
+    <div>
+        <h3>6. Subtração de Dois Valores</h3>
+        <button onclick="exercicio6()">Executar</button>
+    </div>
+
+    <div>
+        <h3>7. Verificar Maioridade</h3>
+        <button onclick="exercicio7()">Executar</button>
+    </div>
+
+    <div>
+        <h3>8. Número Positivo, Negativo ou Zero</h3>
+        <button onclick="exercicio8()">Executar</button>
+    </div>
+
+    <div>
+        <h3>9. Loop While - Números de 1 a 10</h3>
+        <button onclick="exercicio9()">Executar</button>
+    </div>
+
+    <div>
+        <h3>10. Verificar Aprovação por Nota</h3>
+        <button onclick="exercicio10()">Executar</button>
+    </div>
+
+    <div>
+        <h3>11. Número Aleatório</h3>
+        <button onclick="exercicio11()">Executar</button>
+    </div>
+
+    <div>
+        <h3>12. Número Aleatório entre 1 e 10</h3>
+        <button onclick="exercicio12()">Executar</button>
+    </div>
+
+    <div>
+        <h3>13. Número Aleatório entre 1 e 1000</h3>
+        <button onclick="exercicio13()">Executar</button>
+    </div>
+
+    <div>
+        <h3>Executar Todos os Exercícios</h3>
+        <button onclick="executarTodosExercicios()">Executar Todos</button>
+    </div>
+
+    <script>
+        // Exercício 1: Mensagem de boas-vindas
+        function exercicio1() {
+            console.log("=== EXERCÍCIO 1 ===");
+            console.log("Oie! Seja vem vinda/o!");
+            console.log("");
+        }
+
+        // Exercício 2: Variável nome + console.log
+        function exercicio2() {
+            console.log("=== EXERCÍCIO 2 ===");
+            const nome = "Mariana";
+            console.log(`Olá, ${nome}!`);
+            console.log("");
+        }
+
+        // Exercício 3: Variável nome + alert
+        function exercicio3() {
+            console.log("=== EXERCÍCIO 3 ===");
+            const nome = "Mariana";
+            alert(`Olá, ${nome}!`);
+            console.log(`Alert exibido: "Olá, ${nome}!"`);
+            console.log("");
+        }
+
+        // Exercício 4: Prompt - linguagem favorita
+        function exercicio4() {
+            console.log("=== EXERCÍCIO 4 ===");
+            const linguagem = prompt("Qual a linguagem de programação que você mais gosta?");
+            console.log(`Sua linguagem favorita é: ${linguagem}`);
+            console.log("");
+        }
+
+        // Exercício 5: Soma de dois valores
+        function exercicio5() {
+            console.log("=== EXERCÍCIO 5 ===");
+            const valor1 = 15;
+            const valor2 = 25;
+            const resultado = valor1 + valor2;
+            console.log(`A soma de ${valor1} e ${valor2} é igual a ${resultado}.`);
+            console.log("");
+        }
+
+        // Exercício 6: Subtração de dois valores
+        function exercicio6() {
+            console.log("=== EXERCÍCIO 6 ===");
+            const valor1 = 50;
+            const valor2 = 20;
+            const resultado = valor1 - valor2;
+            console.log(`A diferença entre ${valor1} e ${valor2} é igual a ${resultado}.`);
+            console.log("");
+        }
+
+        // Exercício 7: Verificar maioridade
+        function exercicio7() {
+            console.log("=== EXERCÍCIO 7 ===");
+            const idade = prompt("Por favor, insira sua idade:");
+            const idadeNum = parseInt(idade);
+            
+            if (idadeNum >= 18) {
+                console.log("Você é maior de idade!");
+            } else {
+                console.log("Você é menor de idade!");
+            }
+            console.log("");
+        }
+
+        // Exercício 8: Positivo, negativo ou zero
+        function exercicio8() {
+            console.log("=== EXERCÍCIO 8 ===");
+            const numero = prompt("Digite um número:");
+            const num = parseFloat(numero);
+            
+            if (num > 0) {
+                console.log("O número é positivo!");
+            } else if (num < 0) {
+                console.log("O número é negativo!");
+            } else {
+                console.log("O número é zero!");
+            }
+            console.log("");
+        }
+
+        // Exercício 9: Loop while de 1 a 10
+        function exercicio9() {
+            console.log("=== EXERCÍCIO 9 ===");
+            let contador = 1;
+            console.log("Números de 1 a 10:");
+            
+            while (contador <= 10) {
+                console.log(contador);
+                contador++;
+            }
+            console.log("");
+        }
+
+        // Exercício 10: Verificar aprovação
+        function exercicio10() {
+            console.log("=== EXERCÍCIO 10 ===");
+            const nota = 8.5;
+            
+            if (nota >= 7) {
+                console.log(`Nota: ${nota} - Aprovado!`);
+            } else {
+                console.log(`Nota: ${nota} - Reprovado!`);
+            }
+            console.log("");
+        }
+
+        // Exercício 11: Número aleatório qualquer
+        function exercicio11() {
+            console.log("=== EXERCÍCIO 11 ===");
+            const numeroAleatorio = Math.random();
+            console.log(`Número aleatório gerado: ${numeroAleatorio}`);
+            console.log("");
+        }
+
+        // Exercício 12: Número inteiro entre 1 e 10
+        function exercicio12() {
+            console.log("=== EXERCÍCIO 12 ===");
+            const numeroAleatorio = Math.floor(Math.random() * 10) + 1;
+            console.log(`Número inteiro aleatório entre 1 e 10: ${numeroAleatorio}`);
+            console.log("");
+        }
+
+        // Exercício 13: Número inteiro entre 1 e 1000
+        function exercicio13() {
+            console.log("=== EXERCÍCIO 13 ===");
+            const numeroAleatorio = Math.floor(Math.random() * 1000) + 1;
+            console.log(`Número inteiro aleatório entre 1 e 1000: ${numeroAleatorio}`);
+            console.log("");
+        }
+
+        // Função para executar todos os exercícios
+        function executarTodosExercicios() {
+            console.clear();
+            console.log("EXECUTANDO TODOS OS EXERCÍCIOS");
+            console.log("=====================================");
+            
+            exercicio1();
+            exercicio2();
+            exercicio3();
+            exercicio4();
+            exercicio5();
+            exercicio6();
+            exercicio7();
+            exercicio8();
+            exercicio9();
+            exercicio10();
+            exercicio11();
+            exercicio12();
+            exercicio13();
+            
+            console.log("Todos os exercícios foram executados!");
+        }
+
+        // Mensagem inicial
+        console.log("Página de Exercícios JavaScript carregada!");
+        console.log("Clique nos botões para executar cada exercício!");
+    </script>
+</body>
+</html>
