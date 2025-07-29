@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Funções JavaScript - Parte 2</title>
+</head>
+<body>
+  <h1>Funções JavaScript - Parte 2</h1>
+
+  <!-- IMC -->
+  <h3>Calcular IMC</h3>
+  <input type="number" id="peso" placeholder="Peso (kg)">
+  <input type="number" id="altura" placeholder="Altura (m)">
+  <button onclick="mostrarResultado(calcularIMC(+peso.value, +altura.value).toFixed(2))">Calcular IMC</button><br><br>
+
+  <!-- Fatorial -->
+  <h3>Calcular Fatorial</h3>
+  <input type="number" id="numFatorial" placeholder="Número inteiro">
+  <button onclick="mostrarResultado(fatorial(+numFatorial.value))">Calcular Fatorial</button><br><br>
+
+  <!-- Dólar para Reais -->
+  <h3>Converter Dólar para Reais</h3>
+  <input type="number" id="valorDolar" placeholder="Valor em dólar">
+  <button onclick="mostrarResultado('R$ ' + converterDolarParaReais(+valorDolar.value).toFixed(2))">Converter</button><br><br>
+
+  <!-- Sala Retangular -->
+  <h3>Área e Perímetro - Sala Retangular</h3>
+  <input type="number" id="alturaRet" placeholder="Altura (m)">
+  <input type="number" id="larguraRet" placeholder="Largura (m)">
+  <button onclick="salaRetangular(+alturaRet.value, +larguraRet.value)">Calcular</button><br><br>
+
+  <!-- Sala Circular -->
+  <h3>Área e Perímetro - Sala Circular</h3>
+  <input type="number" id="raio" placeholder="Raio (m)">
+  <button onclick="salaCircular(+raio.value)">Calcular</button><br><br>
+
+  <!-- Tabuada -->
+  <h3>Tabuada</h3>
+  <input type="number" id="numTabuada" placeholder="Número">
+  <button onclick="tabuada(+numTabuada.value)">Ver Tabuada</button><br><br>
+
+  <h3>Resultado:</h3>
+  <pre id="resultado"></pre>
+
+  <script>
+    // Crie uma função que calcule o índice de massa corporal (IMC)
+    function calcularIMC(peso, altura) {
+      return peso / (altura * altura);
+    }
+
+    // Crie uma função que calcule o valor do fatorial de um número
+    function fatorial(n) {
+      if (n < 0) return 'Inválido';
+      let resultado = 1;
+      for (let i = 1; i <= n; i++) {
+        resultado *= i;
+      }
+      return resultado;
+    }
+
+    // Crie uma função que converte um valor em dólar para reais
+    function converterDolarParaReais(valorEmDolar) {
+      const cotacao = 4.80;
+      return valorEmDolar * cotacao;
+    }
+
+    // Crie uma função que mostra área e perímetro de uma sala retangular
+    function salaRetangular(altura, largura) {
+      const area = altura * largura;
+      const perimetro = 2 * (altura + largura);
+      mostrarResultado(`Área: ${area} m²\nPerímetro: ${perimetro} m`);
+    }
+
+    // Crie uma função que mostra área e perímetro de uma sala circular
+    function salaCircular(raio) {
+      const pi = 3.14;
+      const area = pi * raio * raio;
+      const perimetro = 2 * pi * raio;
+      mostrarResultado(`Área: ${area.toFixed(2)} m²\nPerímetro: ${perimetro.toFixed(2)} m`);
+    }
+
+    // Crie uma função que mostre a tabuada de um número
+    function tabuada(numero) {
+      let texto = '';
+      for (let i = 1; i <= 10; i++) {
+        texto += `${numero} x ${i} = ${numero * i}\n`;
+      }
+      mostrarResultado(texto);
+    }
+
+    // Função auxiliar para mostrar resultado
+    function mostrarResultado(texto) {
+      document.getElementById("resultado").textContent = texto;
+    }
+  </script>
+</body>
+</html>
