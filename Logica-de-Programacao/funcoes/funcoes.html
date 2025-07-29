@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Funções em JavaScript</title>
+</head>
+<body>
+  <h1>Testando Funções em JS</h1>
+
+  <!-- Olá, mundo -->
+  <button onclick="dizerOla()">Dizer Olá</button><br><br>
+
+  <!-- Olá, nome -->
+  <input type="text" id="nomeInput" placeholder="Digite seu nome">
+  <button onclick="dizerOlaNome(document.getElementById('nomeInput').value)">Dizer Olá com Nome</button><br><br>
+
+  <!-- Dobrar número -->
+  <input type="number" id="numDobro" placeholder="Número para dobrar">
+  <button onclick="mostrarResultado(dobrar(+document.getElementById('numDobro').value))">Dobrar</button><br><br>
+
+  <!-- Média de 3 números -->
+  <input type="number" id="n1" placeholder="Número 1">
+  <input type="number" id="n2" placeholder="Número 2">
+  <input type="number" id="n3" placeholder="Número 3">
+  <button onclick="mostrarResultado(mediaTresNumeros(+n1.value, +n2.value, +n3.value))">Calcular Média</button><br><br>
+
+  <!-- Maior número -->
+  <input type="number" id="maior1" placeholder="Número A">
+  <input type="number" id="maior2" placeholder="Número B">
+  <button onclick="mostrarResultado(maiorNumero(+maior1.value, +maior2.value))">Maior Número</button><br><br>
+
+  <!-- Quadrado -->
+  <input type="number" id="quadradoNum" placeholder="Número para quadrado">
+  <button onclick="mostrarResultado(quadrado(+quadradoNum.value))">Quadrado</button><br><br>
+
+  <h3>Resultado:</h3>
+  <div id="resultado"></div>
+
+  <script>
+    // Criar uma função que exibe "Olá, mundo!" no console.
+    function dizerOla() {
+      console.log("Olá, mundo!");
+      mostrarResultado("Olá, mundo!");
+    }
+
+    // Criar uma função que recebe um nome como parâmetro e exibe "Olá, [nome]!" no console.
+    function dizerOlaNome(nome) {
+      console.log(`Olá, ${nome}!`);
+      mostrarResultado(`Olá, ${nome}!`);
+    }
+
+    // Criar uma função que recebe um número como parâmetro e retorna o dobro desse número.
+    function dobrar(numero) {
+      return numero * 2;
+    }
+
+    // Criar uma função que recebe três números como parâmetros e retorna a média deles.
+    function mediaTresNumeros(a, b, c) {
+      return (a + b + c) / 3;
+    }
+
+    // Criar uma função que recebe dois números como parâmetros e retorna o maior deles.
+    function maiorNumero(x, y) {
+      return x > y ? x : y;
+    }
+
+    // Criar uma função que recebe um número como parâmetro e retorna o resultado da multiplicação desse número por ele mesmo.
+    function quadrado(numero) {
+      return numero * numero;
+    }
+
+    // Função auxiliar para mostrar resultado na tela
+    function mostrarResultado(texto) {
+      document.getElementById("resultado").textContent = `Resultado: ${texto}`;
+    }
+  </script>
+</body>
+</html>
