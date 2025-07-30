@@ -56,7 +56,7 @@ O **Amigo Secreto** é uma aplicação web que permite adicionar nomes de amigos
 | 📏 **Tamanho mínimo** | Nome deve ter pelo menos 2 caracteres |
 | 👥 **Mínimo de participantes** | Precisa de 2+ pessoas para sortear |
 
-## 🎨 Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 ```
 Programa_ONE/
