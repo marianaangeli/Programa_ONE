@@ -37,7 +37,7 @@ O **Amigo Secreto** é uma aplicação web que permite adicionar nomes de amigos
    - Clique "Adicionar" ou pressione Enter
    - Quando tiver pelo menos 2 pessoas, clique "Sortear Amigo"
 
-## 📸 Preview
+## 👀 Preview
 
 ```
 🎉 Amigo Secreto
@@ -77,8 +77,3 @@ Programa_ONE/
 - **Validação em tempo real** de entradas
 - **Animações CSS** para melhor UX
 
-⭐ **Gostou do projeto? Deixe uma estrela!** ⭐
-- GitHub: [@seu-usuario](https://github.com/seu-usuario)
-- LinkedIn: [Seu Nome](https://linkedin.com/in/seu-perfil)
-
----
