@@ -22,8 +22,6 @@ alura-store-analysis/
 ├── notebooks/
 │   └── Alura_Store.ipynb
 │
-├── images/
-│   └── [gráficos gerados]
 │
 ├── README.md
 └── conclusao.md
