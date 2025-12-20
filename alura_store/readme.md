@@ -24,7 +24,7 @@ alura-store-analysis/
 │
 │
 ├── README.md
-└── conclusao.md
+
 ```
 
 ## Dados Analisados
