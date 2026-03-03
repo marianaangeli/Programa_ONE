@@ -36,4 +36,22 @@ Abaixo, a comparação de performance entre os modelos testados após o balancea
 | 📈 Regressão Logística | 74% | 51% | 72% |
 | 🌲 Random Forest | 78% | 59% | 52% |
 
-> **Insight Técnico:** O modelo **Regressão Logística** apresentou um **Recall** superior, sendo mais eficiente em capturar clientes que
+> **Insight Técnico:** O modelo **Regressão Logística** apresentou um **Recall** superior, sendo mais eficiente em capturar clientes que realmente pretendem sair, o que é o foco principal da Telecom X nesta etapa.
+
+### Fatores Decisivos (Feature Importance)
+O modelo Random Forest destacou as seguintes variáveis como as mais influentes para a previsão de saída:
+1.  **tenure** (Tempo de permanência do cliente)
+2.  **TotalCharges** (Gasto total acumulado)
+3.  **MonthlyCharges** (Valor da fatura mensal)
+4.  **Contract_Month-to-month** (Contratos sem fidelidade anual)
+5.  **OnlineSecurity_No** (Ausência de serviços de segurança)
+
+
+
+## 💡 Conclusão e Insights Estratégicos
+1.  **Fidelização no Onboarding:** Clientes com baixo **tenure** possuem altíssimo risco. É necessário focar em ações de retenção nos primeiros 6 meses.
+2.  **Migração de Contrato:** Planos "mês a mês" facilitam a evasão. Incentivar a migração para planos anuais pode estabilizar a base.
+3.  **Cross-selling de Segurança:** A falta de serviços de segurança online está ligada ao Churn. Oferecer esses serviços como bônus pode aumentar o valor percebido e a lealdade.
+
+---
+**Desenvolvido por: Analista de Machine Learning Júnior**
